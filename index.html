@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FANZ STORE - Top Up Game</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+}
+header {
+  background: #087cff;
+  padding: 25px;
+  text-align: center;
+}
+.container {
+  padding: 20px;
+}
+.card {
+  background: #243449;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 15px;
+}
+button {
+  background: #087cff;
+  color: white;
+  border: 0;
+  padding: 13px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>FANZ STORE</h1>
+<p>TOP UP GAME MURAH DAN TERPERCAYA</p>
+</header>
+
+<div class="container">
+<h2>Pilih Game Favoritmu</h2>
+
+<div class="card">
+<h3>Mobile Legends</h3>
+<p>86 Diamond - Rp20.000</p>
+<button onclick="beli('Mobile Legends - 86 Diamond')">
+BELI SEKARANG
+</button>
+</div>
+
+<div class="card">
+<h3>Free Fire</h3>
+<p>100 Diamond - Rp15.000</p>
+<button onclick="beli('Free Fire - 100 Diamond')">
+BELI SEKARANG
+</button>
+</div>
+
+<div class="card">
+<h3>PUBG Mobile</h3>
+<p>60 UC - Rp15.000</p>
+<button onclick="beli('PUBG Mobile - 60 UC')">
+BELI SEKARANG
+</button>
+</div>
+</div>
+
+<script>
+function beli(item) {
+  let nomor = "6281234567890";
+  let pesan = "Halo FANZ STORE, saya mau beli " + item;
+  window.open(
+    "https://wa.me/" + nomor + "?text=" +
+    encodeURIComponent(pesan)
+  );
+}
+</script>
+
+</body>
+</html>
